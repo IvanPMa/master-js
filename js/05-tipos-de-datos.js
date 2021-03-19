@@ -21,3 +21,9 @@ console.log(parseFloat(numero_falso)+7);
 var numero_letra = 23;
 
 console.log(String(numero_letra));
+
+
+console.log(typeof numero_entero);
+console.log(typeof cadena_texto);
+console.log(typeof verdadero_o_falso);
+console.log(typeof numero_letra);
