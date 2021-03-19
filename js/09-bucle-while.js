@@ -6,6 +6,10 @@ var year = 2018;
 while (year <= 2051){
     console.log("Estamos en el año ",year);
     year++;
+    if (year == 2021){
+        console.log("Año actual ",year);
+        break;
+    }
 }
 
 //Do while
