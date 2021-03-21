@@ -9,10 +9,11 @@ function sumame(numero1, numero2,sumaYmuestra, sumaPorDos){
     sumaYmuestra(sumar);
     sumaPorDos(sumar);
 }
-
-sumame(5,7, function(dato){
+//Arrow function,  forma dedefinir funciones de callback de manera mas limpia 
+// y clara
+sumame(5,7, dato =>{
     console.log("La suma es: ",dato)
 },
-function (dato){
+dato =>{
     console.log("La suma por dos es: ", (dato*2));
 });
