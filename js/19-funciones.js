@@ -3,11 +3,18 @@
 //Funciones
 //una agrupacion reutilizable de un conjunto de isntrucciones
 
-function calculadora() {
-    console.log("Hola soy la calculadora");
-    console.log("Si soy yo ");
-    return "Hola soy la calculadora"
+function calculadora(numero1,numero2) {
+    console.log("Suma: "+(numero1+numero2));
+    console.log("Resta: "+(numero1-numero2));
+    console.log("Multiplicacion: "+(numero1*numero2));
+    console.log("Division: "+(numero1+numero2));
+    console.log (" ");
+
+    //return ("Hola doy la calculadora")
 }
 
-var mensajeCalculadora = calculadora();
-console.log(mensajeCalculadora);
+
+for (let i = 0; i<= 10; i++ ){
+    console.log(i)
+    calculadora (i,5);
+}
