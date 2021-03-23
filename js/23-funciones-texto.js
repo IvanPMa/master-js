@@ -1,10 +1,10 @@
 'use strict'
 
-// Transformacion de textos
+//*********  METODOS DE BUSQUEDA ***********
 
 var numero = 444;
 var texto1 = "Este es un curso de Javascript curso";
-var texto2 ="Es muy buen curso";
+var texto2 ="   Es muy buen curso   ";
 // Index Of indica en que caracter inicia esa palabra
 let busqueda1 = texto1.lastIndexOf("curso");
 console.log(busqueda1);
@@ -32,7 +32,26 @@ console.log(busqueda5);
 //Busca al inicio del string que empiece con esa cadena
 let busqueda6 = texto1.startsWith("Este es un curso");
 console.log (busqueda6);
-console.log(texto1.endsWith("Javascript curso"))
+console.log(texto1.endsWith("Javascript curso"));
 
 //Encontrar la palabra dentro del string con includes
 console.log(texto1.includes("Javascript"));
+
+
+//*********  METODOS DE REEMPLAZO ***********
+
+//Reemplazar una palabra por otra
+let busqueda = texto1.replace("Javascript","Typescript");
+console.log(busqueda);
+
+//Separar y obtener un string desde un indice estableciendo un limite o no
+busqueda = texto1.slice(11,22);
+console.log(busqueda);
+
+//Convertir un string en un array, obtiene las palabras y las mete en un array
+busqueda = texto1.split(" ");
+console.log(busqueda)
+
+//Quitar los espacios de una cadena por delante y por atras
+busqueda = texto2.trim();
+console.log(busqueda)
