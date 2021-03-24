@@ -24,8 +24,13 @@ for (let i = 0 ; i < lenguajes.length; i++){
 document.write("<h1>Lenguajes del 2021</h1>");
 document.write("<ul>");
 
-lenguajes.forEach((elemento,indice,arr)=>{
+/* lenguajes.forEach((elemento,indice,arr)=>{
     console.log(arr);
     document.write("<li>"+indice+" "+elemento+"</li>");
-});
+}); */
+
+for(let lenguaje in lenguajes){
+    document.write("<li>"+lenguajes[lenguaje]+"</li>");
+}
+
 document.write("</ul>"); 
