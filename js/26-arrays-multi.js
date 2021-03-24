@@ -28,3 +28,8 @@ if(indice >-1){
 //Convertir un arreglo a un string
 var peliculas_string = peliculas.join();
 console.log(peliculas_string);
+
+//Convertir un string a un array
+let cadena = "Texto1, Texto2, Texto3"
+let cadena_array= cadena.split(", ");
+console.log(cadena_array);
