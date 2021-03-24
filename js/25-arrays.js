@@ -16,9 +16,16 @@ if(elemento >= nombres.length){
 }
 */
 
-document.write("<h1>Lenguajes del 2021</h1>");
-document.write("<ul>");
+/* 
 for (let i = 0 ; i < lenguajes.length; i++){
     document.write("<li>"+ lenguajes[i]+"</li>");
-}
-document.write("</ul>");
+}*/
+
+document.write("<h1>Lenguajes del 2021</h1>");
+document.write("<ul>");
+
+lenguajes.forEach((elemento,indice,arr)=>{
+    console.log(arr);
+    document.write("<li>"+indice+" "+elemento+"</li>");
+});
+document.write("</ul>"); 
