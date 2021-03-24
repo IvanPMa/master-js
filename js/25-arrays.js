@@ -5,7 +5,7 @@
 var nombre= "Ivan Pacheco";
 var nombres = ["Ivan Pacheco","Victor Robles","Juan Lopez","Manolo Garcia",52,true]
 
-var lenguajes = new Array('HTMl', 'JS', 'TS', 'Java','C#','Python');
+var lenguajes = new Array('HTML', 'JS', 'TS', 'Java','C#','Python');
 
 /*
 var elemento = parseInt(prompt("¿Que elemento del array quieres? ",0));
@@ -34,3 +34,14 @@ for(let lenguaje in lenguajes){
 }
 
 document.write("</ul>"); 
+
+//Busquedas
+// Indices que cumplan una condicion concreta
+var precios =[10, 20, 50 ,80,12]
+var busqueda = precios.some(precio => precio >= 10);
+console.log(busqueda);
+//Busca en un arreglo y nos devuelve el texto
+busqueda = lenguajes.find(lenguaje => lenguaje == 'HTML');
+console.log(busqueda);
+    busqueda = lenguajes.findIndex(lenguaje => lenguaje == 'HTML');
+    console.log(busqueda);
