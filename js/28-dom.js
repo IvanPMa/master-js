@@ -4,7 +4,8 @@ function cambiaColor (color){
     caja.style.background = color;
 } 
 
-var caja = document.getElementById("micaja");
+// var caja = document.getElementById("micaja");
+var caja = document.querySelector("#micaja");
 caja.innerHTML = "¡Texto desde JS¡";
 
 //Cambiar estilos desde js
