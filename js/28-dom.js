@@ -6,4 +6,6 @@ caja.innerHTML = "¡Texto desde JS¡";
 
 //Cambiar estilos desde js
 caja.style.background = "red";
+caja.style.padding = "20px";
+caja.style.color = "white";
 console.log(caja);
