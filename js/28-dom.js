@@ -20,5 +20,7 @@ console.log(caja);
 //Conseguir elementos por su etiqueta
 
 var todosLosDivs = document.getElementsByTagName('div');
-var consulta = todosLosDivs[2].textContent;
-console.log(consulta);
+var contenidoEnTexto = todosLosDivs[2];
+contenidoEnTexto.innerHTML = "Otro texto para el segundo elemento";
+contenidoEnTexto.style.background = "red";
+console.log(contenidoEnTexto);
