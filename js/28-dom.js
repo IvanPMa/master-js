@@ -16,3 +16,8 @@ caja.style.color = "white";
 caja.className = "caja";
 // cambiaColor("blue");
 console.log(caja);
+
+//Conseguir elementos por su etiqueta
+
+var todosLosDivs = document.getElementsByTagName('div');
+console.log(todosLosDivs);
