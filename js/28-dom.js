@@ -20,4 +20,5 @@ console.log(caja);
 //Conseguir elementos por su etiqueta
 
 var todosLosDivs = document.getElementsByTagName('div');
-console.log(todosLosDivs);
+var consulta = todosLosDivs[2].textContent;
+console.log(consulta);
