@@ -20,7 +20,11 @@ console.log(caja);
 //Conseguir elementos por su etiqueta
 
 var todosLosDivs = document.getElementsByTagName('div');
-var contenidoEnTexto = todosLosDivs[2];
-contenidoEnTexto.innerHTML = "Otro texto para el segundo elemento";
-contenidoEnTexto.style.background = "red";
-console.log(contenidoEnTexto);
+
+
+for (let valor in todosLosDivs){
+    var parrafo = document.createElement("p");
+    var texto = document.createTextNode(todosLosDivs[valor].textContent);
+    parrafo.appendChild(texto);
+    document.querySelector('#miseccion').appendChild(parrafo); 
+}
