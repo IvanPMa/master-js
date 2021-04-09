@@ -20,11 +20,14 @@ console.log(caja);
 //Conseguir elementos por su etiqueta
 
 var todosLosDivs = document.getElementsByTagName('div');
-
+var seccion = document.querySelector('#miseccion');
+var hr = document.createElement("hr")
 
 for (let valor in todosLosDivs){
-    var parrafo = document.createElement("p");
-    var texto = document.createTextNode(todosLosDivs[valor].textContent);
-    parrafo.appendChild(texto);
-    document.querySelector('#miseccion').appendChild(parrafo); 
+    if(typeof todosLosDivs[valor].textContent == 'string'){
+        var parrafo = document.createElement("p");
+        var texto = document.createTextNode(todosLosDivs[valor].textContent);
+        parrafo.append(texto);
+        seccion.append(parrafo); 
+    } 
 }
