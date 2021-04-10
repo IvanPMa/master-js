@@ -35,6 +35,8 @@ for (let valor in todosLosDivs){
 //Conseguir elementos por su clase css
 
 var divRojos = document.getElementsByClassName("rojo");
+var divAmarillos = document.getElementsByClassName("amarillo");
+console.log(divAmarillos);
 for(let div in divRojos){
     if(divRojos[div].className == 'rojo'){
         divRojos[div].style.background = "red";
