@@ -36,6 +36,7 @@ for (let valor in todosLosDivs){
 
 var divRojos = document.getElementsByClassName("rojo");
 var divAmarillos = document.getElementsByClassName("amarillo");
+divAmarillos[0].style.background = 'yellow';
 console.log(divAmarillos);
 for(let div in divRojos){
     if(divRojos[div].className == 'rojo'){
@@ -43,3 +44,14 @@ for(let div in divRojos){
     }
 }
 console.log(divRojos);
+
+// Query selector 
+
+var id = document.querySelector("#encabezado");
+console.log(id);
+
+var claseRojo = document.querySelector("div.rojo");
+console.log(claseRojo);
+
+var etiqueta = document.querySelector("div");
+console.log(etiqueta)
