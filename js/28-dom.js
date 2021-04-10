@@ -35,4 +35,9 @@ for (let valor in todosLosDivs){
 //Conseguir elementos por su clase css
 
 var divRojos = document.getElementsByClassName("rojo");
+for(let div in divRojos){
+    if( typeof todosLosDivs[div].textContent == 'string'){
+        divRojos[div].style.background = "red";
+    }
+}
 console.log(divRojos);
