@@ -31,3 +31,8 @@ for (let valor in todosLosDivs){
         seccion.append(parrafo); 
     } 
 }
+
+//Conseguir elementos por su clase css
+
+var divRojos = document.getElementsByClassName("rojo");
+console.log(divRojos);
