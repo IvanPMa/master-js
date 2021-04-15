@@ -12,6 +12,17 @@ function cambiarColor(){
     boton.style.border = "2px solid #ccc";
 }
 var boton = document.querySelector("#boton");
+// Click
 boton.addEventListener('click', ()=>{
     cambiarColor();
+});
+
+// Mouse over
+boton.addEventListener('mouseover',()=>{
+    boton.style.background = '#ccc';
+});
+
+// Mouseout
+boton.addEventListener('mouseout', function(){
+    boton.style.background = " black";
 });
