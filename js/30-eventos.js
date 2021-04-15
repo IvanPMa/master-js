@@ -38,6 +38,9 @@ input.addEventListener('blur',() =>{
     console.log('Estas fuera del input');
 });
 // Keydown
+input.addEventListener('keydown', function(event){
+    console.log('Pulsando esta tecla',String.fromCharCode(event.keyCode));
+});
 
 // Keypress
 
