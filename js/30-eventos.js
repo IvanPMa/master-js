@@ -26,3 +26,19 @@ boton.addEventListener('mouseover',()=>{
 boton.addEventListener('mouseout', function(){
     boton.style.background = " black";
 });
+
+// Focus 
+
+var input = document.querySelector('#campo_nombre');
+input.addEventListener('focus',() =>{
+    console.log('Estas dentro del input');
+});
+//Blur
+input.addEventListener('blur',() =>{
+    console.log('Estas fuera del input');
+});
+// Keydown
+
+// Keypress
+
+// Keyup
