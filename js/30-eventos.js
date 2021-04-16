@@ -39,11 +39,13 @@ input.addEventListener('blur',() =>{
 });
 // Keydown
 input.addEventListener('keydown', function(event){
-    console.log('Pulsando esta tecla',String.fromCharCode(event.keyCode));
-    console.log(event.keyCode);
-    console.log(String.fromCharCode(event.keyCode))
+    console.log('[keydown] Pulsando esta tecla',String.fromCharCode(event.keyCode));
+    // console.log(event.keyCode);
+    // console.log(String.fromCharCode(event.keyCode))
 });
 
 // Keypress
-
+input.addEventListener('keypress', function(event){
+    console.log('[keypress] Pulsando esta tecla',String.fromCharCode(event.keyCode));
+});
 // Keyup
