@@ -46,6 +46,9 @@ input.addEventListener('keydown', function(event){
 
 // Keypress
 input.addEventListener('keypress', function(event){
-    console.log('[keypress] Pulsando esta tecla',String.fromCharCode(event.keyCode));
+    console.log('[keypress] Tecla presionada',String.fromCharCode(event.keyCode));
 });
 // Keyup
+input.addEventListener('keyup', function(event){
+    console.log('[keyup] Tecla soltada',String.fromCharCode(event.keyCode));
+});
