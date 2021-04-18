@@ -6,3 +6,4 @@ var tiempo = setInterval( function (){
 }, 3000);
 
 })
+console.log('hola mundo');
