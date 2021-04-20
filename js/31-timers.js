@@ -10,7 +10,12 @@ var tiempo = setInterval( function (){
     } else{
         encabezado.style.fontSize = '50px'
     }
-}, 3000);
+    }, 1000);
 
+    var stop = document.querySelector('#stop');
+    stop.addEventListener('click', function(){
+        alert('Haz parado el intervalo en bucle');
+        clearInterval(tiempo);
+    });
 })
 
