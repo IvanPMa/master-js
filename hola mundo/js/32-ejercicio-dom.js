@@ -9,6 +9,7 @@ window.addEventListener('load',function(){
         var nombre = document.querySelector('#nombre').value;
         var apellidos = document.querySelector('#apellidos').value;
         var edad = document.querySelector('#edad').value;
+        console.log(nombre,apellidos,edad);
     })
 
 });
