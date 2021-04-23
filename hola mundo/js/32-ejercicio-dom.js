@@ -6,6 +6,9 @@ window.addEventListener('load',function(){
 
     formulario.addEventListener('submit', function(){
         console.log('Evento sumbit capturado');
+        var nombre = document.querySelector('#nombre').value;
+        var apellidos = document.querySelector('#apellidos').value;
+        var edad = document.querySelector('#edad').value;
     })
 
 });
