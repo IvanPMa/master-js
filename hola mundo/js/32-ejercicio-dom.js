@@ -11,7 +11,20 @@ window.addEventListener('load',function(){
         console.log('Evento sumbit capturado');
         var nombre = document.querySelector('#nombre').value;
         var apellidos = document.querySelector('#apellidos').value;
-        var edad = document.querySelector('#edad').value;
+        var edad = parseInt(document.querySelector('#edad').value);
+         if(nombre.trim() == null || nombre.trim().length == 0){
+            alert('El nombre no es válido'); 
+            return false;
+         }
+         if(apellidos.trim() == null || apellidos.trim().length == 0){
+            alert('Los apellidos no son válidos'); 
+            return false;
+         }
+
+         if(edad == null || edad<= 0 || isNaN(edad)){
+            alert('La edad no es válida'); 
+            return false;
+         }
 
         box_dashed.style.display = 'block';
         let p_nombre = document.querySelector('#p_nombre span');
