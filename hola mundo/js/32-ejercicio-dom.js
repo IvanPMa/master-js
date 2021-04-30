@@ -13,8 +13,10 @@ window.addEventListener('load',function(){
         var apellidos = document.querySelector('#apellidos').value;
         var edad = parseInt(document.querySelector('#edad').value);
          if(nombre.trim() == null || nombre.trim().length == 0){
-            alert('El nombre no es válido'); 
+             document.querySelector('#error_nombre').innerHTML = 'El nombre no es valido';
             return false;
+         } else{
+             document.querySelector('#error_nombre').style.display = 'none';
          }
          if(apellidos.trim() == null || apellidos.trim().length == 0){
             alert('Los apellidos no son válidos'); 
