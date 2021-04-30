@@ -14,8 +14,16 @@ window.addEventListener('load',function(){
         var edad = document.querySelector('#edad').value;
 
         box_dashed.style.display = 'block';
+
+        var datos_usuario = [nombre, apellidos, edad ];
         
-        console.log(nombre,apellidos,edad);
+        for (let indice in datos_usuario){
+            var parrafo = document.createElement("p");
+            parrafo.append(datos_usuario[indice]);
+            box_dashed.append(parrafo);
+
+        }
+
     })
 
 });
